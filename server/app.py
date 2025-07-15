@@ -6,5 +6,14 @@ contracts = [{"id": 1, "contract_information": "This contract is for John and bu
 customers = ["bob","bill","john","sarah"]
 app = Flask(__name__)
 
+@app.route('/contract/<id>')
+def contractor_info():
+    pass
+
+@app.route('/customer/<customer_name>')
+def customer_info():
+    pass
+
+
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
